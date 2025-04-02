@@ -3,8 +3,31 @@
 A Python project demonstrating how Fourier series approximate a square wave, including the Gibbs phenomenon (overshoot near discontinuities).
 
 
-## 📖 Background  
-The square wave function (odd periodic extension) is defined as:
+## 📖 Background
+The Gibbs phenomenon, named after Josiah Willard Gibbs who explained it in 1898, was first discovered analytically by Henry Wilbraham in 1848. It refers to the oscillatory behavior observed in the Fourier series or Fourier transform approximations of functions with jump discontinuities. Specifically, near a discontinuity, the partial sums of the Fourier series or the truncated Fourier integrals exhibit overshoots and undershoots that do not diminish as the number of terms in the approximation increases. Instead, these oscillations converge to a finite limit, typically about 8.95% overshoot and 4.86% undershoot relative to the jump discontinuity's size.
+
+**Key Characteristics:**
+Overshoots and Undershoots: The phenomenon manifests as peaks (overshoots) and valleys (undershoots) near the discontinuity. For example, in the Fourier series approximation of a square wave, the first overshoot is approximately 8.95% above the function's value just after the jump.
+
+**Persistence:** Increasing the number of terms in the approximation (e.g., higher truncation limits) does not eliminate the overshoots; it only moves them closer to the discontinuity.
+
+**Mathematical Explanation:** The Gibbs phenomenon arises due to the inability of the Fourier basis functions (sines and cosines) to perfectly represent abrupt changes. The oscillations are a consequence of the "ringing" effect caused by the abrupt truncation of the infinite series or integral.
+
+**Historical Context:**
+Wilbraham's Discovery (1848): Henry Wilbraham first identified the phenomenon while studying the Fourier series approximation of a square wave. However, his work was largely overlooked for decades.
+
+Gibbs' Explanation (1898): J.W. Gibbs provided a detailed explanation of the phenomenon while analyzing the output of a harmonic analyzer, bringing it to wider attention.
+
+Modern Understanding: The Gibbs phenomenon is now recognized as a fundamental aspect of Fourier analysis, with implications in signal processing, image reconstruction, and numerical methods.
+
+**Applications and Mitigation:**
+Signal Processing: The Gibbs phenomenon is critical in designing filters and understanding artifacts in reconstructed signals.
+
+**Mitigation Techniques:** Methods like Fejér averaging (Cesàro summation) and Lanczos sigma-factor smoothing are used to reduce or eliminate the oscillations. Other advanced techniques include Gegenbauer polynomial transforms and wavelet-based approaches.
+
+The Gibbs phenomenon remains a central topic in approximation theory, illustrating the challenges and trade-offs in representing discontinuous functions using continuous basis functions.
+## Example
+Consider a square wave function:
 ![Equation](https://quicklatex.com/cache3/7d/ql_48c0f5cfa0558e7b74872db966f8197d_l3.png)
 
 The Fourier series of a square wave is given by:
@@ -13,9 +36,9 @@ The Fourier series of a square wave is given by:
 Despite increasing \( N \), the approximation exhibits **Gibbs phenomenon**—persistent overshoots (~9%) near jumps.
 | **Graph of Partial Fourier Sum $S_5(x)$**  | **Graph of Partial Fourier Sum $S_{20}(x)$**  |
 |-------------|-------------|
-| !![Image 1](./assets/sqwaven5.jpg) | !![Image 2](./assets/sqwaven20.jpg) |
+| ![Image 1](./assets/sqwaven5.jpg) | ![Image 2](./assets/sqwaven20.jpg) |
 | **Graph of Partial Fourier Sum $S_{50}(x)$**  | **Graph of Partial Fourier Sum $S_{100}(x)$**  |
-| !!![Image 3](./assets/sqwaven50.jpg) | !![Image 4](./assets/sqwaven100.jpg) |
+| ![Image 3](./assets/sqwaven50.jpg) | ![Image 4](./assets/sqwaven100.jpg) |
 
 ## 🎥 Demo  
 ![Demo GIF](assets/fourier_animation.gif)
@@ -103,4 +126,5 @@ ani.save("fourier_animation.gif", writer="pillow", fps=10)  # Requires pillow
    git clone https://github.com/rbelbase12/fourier-gibbs-phenomenon.git
 ## References
 1. Gibbs, J. W. (1899). *Fourier Series*. (https://www.nature.com/articles/059606a0.pdf)
+2. A.J.Jerri, The Gibbs phenomenon in Fourier Analysis, splines and wavelet approximations, Kluwer Academic publishers, Netherlands, 1998 (https://link.springer.com/book/10.1007/978-1-4757-2847-7)
 
