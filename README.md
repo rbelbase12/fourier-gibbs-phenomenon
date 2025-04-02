@@ -19,7 +19,7 @@ Despite increasing \( N \), the approximation exhibits **Gibbs phenomenon**—pe
 
 ## 🎥 Demo  
 ![Demo GIF](assets/fourier_animation.gif)
-**Key Observations**
+## Key Observations
 
 Initial Approximation (Low N)
 
@@ -41,10 +41,7 @@ The peak overshoot remains at ~1.08949 (for a jump from −1 to +1).
 
 The width of the overshoot shrinks as N increases, but the height stays constant.
 
-## 🛠️ Setup  
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/rbelbase12/fourier-gibbs-phenomenon.git
+
 ## Python Code for Fourier Series Approximation Animation
 ```python
 # Example: Plot Gibbs phenomenon
@@ -100,6 +97,10 @@ HTML(ani.to_jshtml())  # Ensures animation plays in Colab
 ani.save("fourier_animation.gif", writer="pillow", fps=10)  # Requires pillow
 # ani.save("fourier_animation.mp4", writer="ffmpeg", fps=10)  # Requires ffmpeg
 ```
+## 🛠️ Setup  
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/rbelbase12/fourier-gibbs-phenomenon.git
 ## References
 1. Gibbs, J. W. (1899). *Fourier Series*. (https://www.nature.com/articles/059606a0.pdf)
 
