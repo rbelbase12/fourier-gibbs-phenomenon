@@ -40,7 +40,7 @@ Despite increasing \( N \), the approximation exhibits **Gibbs phenomenon**—pe
 | **Graph of Partial Fourier Sum $S_{50}(x)$**  | **Graph of Partial Fourier Sum $S_{100}(x)$**  |
 | ![Image 3](./assets/sqwaven50.jpg) | ![Image 4](./assets/sqwaven100.jpg) |
 
-## 🎥 Demo  
+## 🎥 Visualizing the Gibbs Phenomenon: Overshoots in Fourier Approximations  
 ![Demo GIF](assets/fourier_animation.gif)
 ## Key Observations
 
