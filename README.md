@@ -18,3 +18,7 @@ Despite increasing \( N \), the approximation exhibits **Gibbs phenomenon**—pe
 1. Clone the repo:
    ```bash
    git clone https://github.com/rbelbase12/fourier-gibbs-phenomenon.git
+
+  ## References
+1. Gibbs, J. W. (1899). *Fourier Series*. (https://www.nature.com/articles/059606a0.pdf)
+
