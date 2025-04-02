@@ -3,7 +3,7 @@
 A Python project demonstrating how Fourier series approximate a square wave, including the Gibbs phenomenon (overshoot near discontinuities).
 
 ## 🎥 Demo  
-fourier_animation.gif
+assets/fourier_animation.gif
 
 ## 📖 Background  
 The Fourier series of a square wave is given by:
