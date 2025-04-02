@@ -2,8 +2,6 @@
 
 A Python project demonstrating how Fourier series approximate a square wave, including the Gibbs phenomenon (overshoot near discontinuities).
 
-## 🎥 Demo  
-![Demo GIF](assets/fourier_animation.gif)
 
 ## 📖 Background  
 The square wave function (odd periodic extension) is defined as:
@@ -13,6 +11,29 @@ The Fourier series of a square wave is given by:
 ![Equation](https://quicklatex.com/cache3/ab/ql_f2723aee1f3cceca8e7e71fcfd984cab_l3.png)
 
 Despite increasing \( N \), the approximation exhibits **Gibbs phenomenon**—persistent overshoots (~9%) near jumps.
+## 🎥 Demo  
+![Demo GIF](assets/fourier_animation.gif)
+**Key Observations**
+
+Initial Approximation (Low N)
+
+With few terms (e.g., N=5), the Fourier series is a wavy approximation of the square wave.
+
+The curve struggles to match the sharp jump, resulting in large oscillations.
+
+Increasing Terms (Higher N)
+
+As N increases (e.g., N=50), the approximation improves in smooth regions.
+
+However, near the discontinuity (e.g., x=0 or x=π), an overshoot appears.
+
+The overshoot does not disappear even as N → ∞ (it stabilizes at ~9% of the jump height).
+
+Gibbs Overshoot Persists
+
+The peak overshoot remains at ~1.08949 (for a jump from −1 to +1).
+
+The width of the overshoot shrinks as N increases, but the height stays constant.
 
 ## 🛠️ Setup  
 1. Clone the repo:
