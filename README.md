@@ -31,7 +31,7 @@ Consider a square wave function:
 
 ![Equation](https://quicklatex.com/cache3/7d/ql_48c0f5cfa0558e7b74872db966f8197d_l3.png)
 
-The Fourier series of a square wave is given by:
+The Partial Fourier sum of a square wave is given by:
 
 ![Equation](https://quicklatex.com/cache3/ab/ql_f2723aee1f3cceca8e7e71fcfd984cab_l3.png)
 
