@@ -16,9 +16,9 @@ Overshoots and Undershoots: The phenomenon manifests as peaks (overshoots) and v
 **Historical Context:**
 Wilbraham's Discovery (1848): Henry Wilbraham first identified the phenomenon while studying the Fourier series approximation of a square wave. However, his work was largely overlooked for decades.
 
-Gibbs' Explanation (1898): J.W. Gibbs provided a detailed explanation of the phenomenon while analyzing the output of a harmonic analyzer, bringing it to wider attention.
+**Gibbs' Explanation (1898):** J.W. Gibbs provided a detailed explanation of the phenomenon while analyzing the output of a harmonic analyzer, bringing it to wider attention.
 
-Modern Understanding: The Gibbs phenomenon is now recognized as a fundamental aspect of Fourier analysis, with implications in signal processing, image reconstruction, and numerical methods.
+**Modern Understanding:** The Gibbs phenomenon is now recognized as a fundamental aspect of Fourier analysis, with implications in signal processing, image reconstruction, and numerical methods.
 
 **Applications and Mitigation:**
 Signal Processing: The Gibbs phenomenon is critical in designing filters and understanding artifacts in reconstructed signals.
@@ -28,9 +28,11 @@ Signal Processing: The Gibbs phenomenon is critical in designing filters and und
 The Gibbs phenomenon remains a central topic in approximation theory, illustrating the challenges and trade-offs in representing discontinuous functions using continuous basis functions.
 ## Example
 Consider a square wave function:
+
 ![Equation](https://quicklatex.com/cache3/7d/ql_48c0f5cfa0558e7b74872db966f8197d_l3.png)
 
 The Fourier series of a square wave is given by:
+
 ![Equation](https://quicklatex.com/cache3/ab/ql_f2723aee1f3cceca8e7e71fcfd984cab_l3.png)
 
 Despite increasing \( N \), the approximation exhibits **Gibbs phenomenon**—persistent overshoots (~9%) near jumps.
