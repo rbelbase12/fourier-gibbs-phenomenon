@@ -11,6 +11,12 @@ The Fourier series of a square wave is given by:
 ![Equation](https://quicklatex.com/cache3/ab/ql_f2723aee1f3cceca8e7e71fcfd984cab_l3.png)
 
 Despite increasing \( N \), the approximation exhibits **Gibbs phenomenon**—persistent overshoots (~9%) near jumps.
+| **Image 1** | **Image 2** |
+|-------------|-------------|
+| ![Alt 1](sqwaven5.png) | ![Alt 2](sqwaven20.png) |
+| **Image 3** | **Image 4** |
+| ![Alt 3](sqwaven50.png) | ![Alt 4](sqwaven100.png) |
+
 ## 🎥 Demo  
 ![Demo GIF](assets/fourier_animation.gif)
 **Key Observations**
